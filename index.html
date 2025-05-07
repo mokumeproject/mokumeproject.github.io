@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8" />
-    <title>Mokume Project</title>
-    <link href="style_1.css" rel="stylesheet" type="text/css" />
-  </head>
+    <meta charset="utf-8" />
+    <title>Mokume</title>
 
-  <body>
-<p>
-  The Mokume Dataset and Inverse Texturing of Solid Wood.
-  SIGGRAPH 2025. 
-  Maria Larsson, Hodaka Yamaguchi, Ehsan Pajouheshgar, I-Chao Shen, Kenji Tojo, Chia-Ming Chang, Lars Hansson, Olof Broman, Takashi Ijiri, Ariel Shamir, Wenzel Jakob, and Takeo Igarashi
-<br><br>
-  Project page under construction...
+<link href="style_1.css" rel="stylesheet" type="text/css" />
 
-</p>
+<div class="header">
+  <h1>The Mokume Dataset and Inverse Texturing of Solid Wood</h1>
+  <p class=titletext>Maria Larsson, Hodaka Yamaguchi, Ehsan Pajouheshgar, I-Chao Shen, Kenji Tojo, Chia-Ming Chang,
+   Lars Hansson, Olof Broman, Takashi Ijiri, Ariel Shamir, Wenzel Jakob, and Takeo Igarashi
+  </p>
+
+<p class=titletext>
+  <a href=https://s2025.siggraph.org/ target="_blank">SIGGRAPH 2025</a> /
+    <a href=https://dl.acm.org/journal/tog target='blank'>ACM Transactions on Graphics</a>
+        <figure>
+        <img src="teaser.jpg" alt="Mokume Title Image" class=headerimage>
+      </p>
+</div>
+
+
+<body>
+
+<!--
+  <h3>SIGGRAPH Sessions</h3>
+    <p>
+      <ul>
+        <li>
+        <a href=https://s2022.siggraph.org/session/?sess=sess102 target="_blank">
+          Round Table: Volumes and Materials</a>. Monday, 8 August 2022, 9am - 10:30am PDT
+        </li>
+        <li><a href=https://s2022.siggraph.org/session/?sess=sess423 target="_blank">
+        Lab Demo</a>. Monday, 8 August 2022, 2pm - 2:30pm PDT
+        </li>
+      </ul>
+  </p>-->
+
+
+  <h3>Abstract</h3>
+    <p> We present the Mokume dataset for solid wood texturing consisting of 
+      190 cube-shaped samples of various hard and softwood species documented 
+      by high-resolution exterior photographs, annual ring annotations, and 
+      volumetric computed tomography (CT) scans. A subset of samples further includes
+      photographs along slanted cuts through the cube for validation purposes.
+      Using this dataset, we propose a three-stage inverse modeling pipeline
+      to infer solid wood textures using only exterior photographs. Our method
+      begins by evaluating a neural model to localize year rings on the cube face
+      photographs. We then extend these exterior 2D observations into a globally
+      consistent 3D representation by optimizing a procedural growth field using
+      a novel iso-contour loss. Finally, we synthesize a detailed volumetric color
+      texture from the growth field. For this last step, we propose two methods
+      with different efficiency and quality characteristics: a fast inverse procedural
+      texture method, and a neural cellular automaton (NCA). We demonstrate the
+      synergy between the Mokume dataset and the proposed algorithms through
+      comprehensive comparisons with unseen captured data. We also present
+      experiments demonstrating the efficiency of our pipeline's components
+      against ablations and baselines.      
+  </p>
+
+
+  <h3>Video</h3>
+  <p>
+    <iframe
+    width="800"
+    height="450"
+    src="https://www.youtube.com/embed/H6N-kYbTJOM"
+    title="The Mokume Dataset and Inverse Modeling of Solid Wood Textures (Technical Paper, SIGGRAPH 2025)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+    </iframe>
+  </p>
+
+  <h3>Paper download</h3>
+  <p>
+
+    <a href="https://www.ma-la.com/mokume/preprint_paper.pdf" target="_blank">PDF &#128196;</a> (13.9 MB)<br>
+  </p>
+  <p>
+    <a href=https://doi.org/10.1145/3730874 target="_blank">DOI &#128279;</a>
+  </p>
+
+  <h3>Code</h3>
+  <p>
+    Github &#128279; (in progress)
+  </p>
+
+  <h3>Dataset</h3>
+  <p>
+    Dropbox link &#128279; (in progress)
+  </p>
+
+<h3> Authors</h3>
+  <p>
+    <a href=https://www.ma-la.com/home.html target="_blank">Maria Larsson</a>, The University of Tokyo<br>
+    <a href=https://researchmap.jp/hody?lang=en target="_blank">Hodaka Yamaguchi</a>, Gifu Prefectural Research Institute for Human Life Technology and Nihon University<br>
+    <a href=https://pajouheshgar.github.io/ target="_blank">Ehsan Pajouheshgar</a>, École Polytechnique Féderale de Lausanne (EPFL)<br>
+    <a href=https://jdily.github.io/ target="_blank">I-Chao Shen</a>, The University of Tokyo<br>
+    <a href=https://kenji-tojo.github.io/ target="_blank">Kenji Tojo</a>, The University of Tokyo<br>
+    <a href=https://chiamingchang.com/ target="_blank">Chia-Ming Chang</a>, National Taiwan University of Arts<br>
+    <a href=https://www.ltu.se/en/staff/l/lars-hansson target="_blank">Lars Hansson</a>, Luleå University of Technology and Norwegian University of Science and Technology<br>
+    <a href=https://www.ltu.se/staff/o/olof-1.12258?l=en target="_blank">Olof Broman</a>, Luleå University of Technology<br>
+    <a href=https://takashiijiri.com/ target="_blank">Takashi Ijiri</a>, Shibaura Institute of Technology<br>
+    <a href=https://faculty.runi.ac.il/arik/site/index.asp target="_blank">Ariel Shamir</a>, Reichman University <br>
+    <a href=https://rgl.epfl.ch/people/wjakob/ target="_blank">Wenzel Jakob</a>, The University of Tokyo and École Polytechnique Féderale de Lausanne (EPFL)<br>
+    <a href=https://www-ui.is.s.u-tokyo.ac.jp/~takeo/ target="_blank">Takeo Igarashi</a>, The University of Tokyo</a>
+  </p>
+
+
+  <h3> Reference </h3>
+  <p>
+    Maria Larsson, Hodaka Yamaguchi, Ehsan Pajouheshgar, I-Chao Shen, Kenji
+Tojo, Chia-Ming Chang, Lars Hansson, Olof Broman, Takashi Ijiri, Ariel Shamir, Wenzel Jakob, and Takeo Igarashi. 2025. The Mokume Dataset and
+Inverse Modeling of Solid Wood Textures. ACM Trans. Graph. 44, 4 (August 2025), 18 pages. https://doi.org/10.1145/3730874
+  </p>
+
 </body>
 </html>
