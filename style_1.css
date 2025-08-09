@@ -231,3 +231,9 @@ mark {
   display: none;
 }
 
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
