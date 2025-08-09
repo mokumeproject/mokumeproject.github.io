@@ -104,9 +104,9 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
   background: #001EDE;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+  text-decoration: none;
 }
 
 a:active {
@@ -216,3 +216,18 @@ mark {
     background-color: #DAF7A6;
     color: black;
 }
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem; /* space between videos */
+}
+.video-grid video {
+  width: 100%;
+  height: auto;
+}
+.hidden {
+  display: none;
+}
+
